@@ -1,0 +1,127 @@
+/*////GENERAL////*/
+body {
+	font-family: 'Montserrat', sans-serif;
+	background : url('bg.png') no-repeat #F0F0E9 /*#99ffcc #FE980F*/; 
+}
+html{ 
+	margin:0;
+	padding:0;
+}
+span{
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+/*////FORMULARIOS////*/
+form {
+	margin: 4em auto; padding: 30px;position: relative;
+	background-color: #fff;
+	width: 400px;
+	min-height: 19em;
+}
+form p {
+	position: 
+	relative;
+	margin-bottom: 1.4em;
+}
+fieldset {
+	 border:0;
+	 margin:0;
+	 padding:0;
+	 width:52%;
+}
+legend{
+	font-weight: 700;
+	font-size: 24px;
+	color: #000;
+	cursor: pointer;
+	padding: 0 0 3px 0;
+	border-bottom: 3px solid #000;
+	margin-bottom:-5px;
+}
+label{ 
+	display:none;
+}
+input, select  {
+	width: 100%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border: none;
+	border-bottom: 3px solid #000;
+	font-size: 0.8em;
+}
+
+input:focus, select {
+	border-bottom: 3px solid #99ffcc;
+}
+
+input[type="submit"]{
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #fff;
+	padding: 15px 30px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	background:#000; 
+	border-bottom: transparent !important;  
+}
+input[type="submit"]:hover, input[type="submit"]:focus {
+	color: #000;
+	background-color: #99ffcc;
+}
+ 
+input[type=checkbox] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #000;
+	vertical-align: middle;
+	margin-top: -1px;
+}
+input:checked {
+  background-color: #99ffcc;
+  border: 3px solid #000;
+}
+a {
+	color: #000;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-bottom: 2px solid transparent;
+}
+
+a:hover, a:focus {outline: none;border-bottom: 2px solid #000;}
+
+::-webkit-input-placeholder {
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	color: #000;
+}
+
+:-moz-placeholder {
+	/* older Firefox*/
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	color: #000;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	color: #000;
+}
+
+:-ms-input-placeholder {
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	color: #000;
+}
