@@ -1,0 +1,24 @@
+.cool{
+	background-image: url('https://i.imgur.com/pvVmY5y.jpg');
+	background-size: cover;
+	/*object-fit: cover;*/
+}
+.logo {
+    margin: 80px auto 50px;
+    max-width: 150px;
+}
+.title {
+    font-size: 58px;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.col-center {
+    margin: 0 auto;
+}
+.col-fixed {
+    max-width: 307px;
+}
+.col-text {
+    text-align: justify;
+}

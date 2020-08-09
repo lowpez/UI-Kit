@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*! Blob.cl v0.1.0 | MIT License | github.com/jgthms/bulma */
+/*CLASE ELEMENTO QUE CONTIENE TODO*/
+.wrapper {
+
+}
+/*CLASE ELEMENTO QUE CONTIENE COLUMNAS (.column)*/
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/*CLASE ELEMENTO DENTRO DE LA FILA (ROW)*/
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+.column-x2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+/*CLASE ALTO 100%*/
+.h-100 {
+  height: 100vh;
+}
+/*CLASE ANCHO 100%*/
+.w-100 {
+  height: 100vw;
+}
+/*CLASE ELEMENTOS OVERLAP*/
+.top-left,
+.top-bottom,
+.bottom-left,
+.bottom-right{
+  position: absolute;
+}
+/*CLASE ELEMENTO TOP-IZQUIERDA*/
+.top-left {
+  top:1vw;
+  left:1vw;
+}
+
+/*CLASE ELEMENTO TOP-DERECHA*/
+.top-right {
+  bottom:1vw;
+  right:1vw;
+}
+/*CLASE ELEMENTO BOTTOM-IZQUIERDA*/
+.bottom-left {
+  top:1vw;
+  left:1vw;
+}
+
+/*CLASE ELEMENTO BOTTOM-DERECHA*/
+.bottom-right {
+  bottom:1vw;
+  right:1vw;
+}
+
+/*CSS MEDIA QUERIES 
+Útiles cuando deseas modificar su sitio o aplicación según el dispositivo*/
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+    position: relative;
+  }
+  .column-x2 {
+    flex: 2
+  }
+}
