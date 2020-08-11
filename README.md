@@ -7,7 +7,9 @@
 Front-end elemental para embellecer el CSS de tus proyectos fácilmente con un estilo minimalista.
 Prototipos mas rápidos desatando el poder de HTML y CSS Grid.
 
-Actualmente el proyecto está dividido y enfocado a tres areas escenciales:
+Actualmente el proyecto está dividido y enfocado a tres areas escenciales.
+Usa solo lo que necesitas. Mantente ligero.
+
 ### Grid.css
 La funcion primaria del proyecto es entregar ligereza y libertad de diagramacion.
 Estilos para:
