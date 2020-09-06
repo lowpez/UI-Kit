@@ -42,7 +42,7 @@ Estilos para elementos de formulario como: **text, textarea, Form, label y Boton
 La funcion primaria del proyecto es entregar ligereza y libertad de diagramacion.
 Estilos para: -, - Y - . Se definirá en el desarrollo.
 
-
+# Blob.css
 ### Clases .css-grid y .css-flexbox 
 
 Son los nombres de dos modelos de posicionamiento CSS de lo mas populares (ademas de nativos) y los tenemos presentes. Cada uno otorgará caracteristicas propias a los elementos que contengan. Ampliamente compatibles. Puedes anidar uno dentro de otro sin problemas.
