@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/*! Blob.cl v0.1.1 | MIT License | https://github.com/lowpez/UI */
+
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+
+/*
+input[type=text] {
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}*/
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  line-height: 1.42857143;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #F2F2F2;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+main {
+  margin: auto;
+}
+p {
+  font-size: 1.6rem;
+  padding-right: 8rem;
+}
+.disclaimer {
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 2rem;
+  padding-right: 17rem;
+}
+strong {
+  font-weight: 700;
+}
+.modal {
+  position: relative;
+  width: 450px;
+  height: calc(450px * 1.61);
+  padding: 3rem;
+  background: #FFF;
+  border: 2.5rem solid #FFCC00;
+  box-shadow: 2px 2px 4px #BBB;
+}
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #FFF;
+  font-size: 1.3rem;
+  line-height: 0;
+  border: none;
+  background-color: #000;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.modal__heading {
+  font-family: 'Bentham', serif;
+  font-size: 5.5rem;
+  font-weight: 400;
+  line-height: 0.9;
+  margin: 3rem 0 4.8rem;
+  letter-spacing: -0.1rem;
+}
+.modal__sub-heading {
+  text-transform: uppercase;
+  color: #666666;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 1rem 0;
+  border-left: 1px solid;
+  padding-left: 1rem;
+  padding-bottom: 1.61rem;
+}
+input[type="email"] {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  padding: 1.3rem;
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 2rem 0 1rem;
+}
+.btn {
+  border: none;
+  background: #000;
+  color: #FFF;
+  display: block;
+  width: 100%;
+  padding: 1.61rem 1rem;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+.btn:hover,
+.btn:focus {
+  outline: 0;
+  background: #FFCC00;
+  color: #000;
+  font-weight: 700;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

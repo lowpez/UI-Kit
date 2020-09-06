@@ -1,20 +1,18 @@
 @charset "UTF-8";
 /*! Blob.cl v0.1.1 | MIT License | https://github.com/lowpez/UI */
 body{
-  
+
 }
 /*IMPLICIT GRID*/
-.row:not(.column){
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    grid-gap: 0rem;
+/*.row:not(.column){
+  display: grid;
 }
-.row > *  {
-    position: relative;
+.wrapper > *  {
+ display: flex;    
 }
 .column {
 
-}
+}*/
 
 
 header{
@@ -54,6 +52,9 @@ footer{
 *[class^='bottom-']{
   bottom: 1vw;
 }
+*[class^='-center']{
+  left: 50%;
+}
 *[class^='top-']{
   top: 1vw;
 }
@@ -77,6 +78,8 @@ footer{
 .centered{
   position: absolute;
 }
+.y-max-100{height: calc(100rem);}
+.y-max-50{height: calc(100vh - 0rem);}
 /*CSS MEDIA QUERIES 
 Útiles cuando deseas modificar su sitio o aplicación según el dispositivo.
 El grid lo soporta nativamente. Mas info en el READ.md*/

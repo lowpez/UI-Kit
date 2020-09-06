@@ -3,21 +3,34 @@
 * [Tecnologias](#tecnologias)
 * [Setup](#setup)
 
-## Introduccion - El objetivo del proyecto
-Front-end elemental para embellecer el CSS de tus proyectos fácilmente con un estilo minimalista.
-Prototipos mas rápidos desatando el poder de HTML y CSS Grid.
+## Introduccion
+Mi Front-end elemental para embellecer el CSS de tus proyectos fácilmente con un estilo minimalista.
+Prototipos mas rápidos desatando el poder nativo de HTML y CSS Grid/Flexbox sin librerias externas.
 
-Actualmente el proyecto está dividido y enfocado a tres areas escenciales.
-Usa solo lo que necesitas. Mantente ligero.
+### Objetivo del proyecto = Porque Usar.
+* Filosofía CSS Grid para estructurar y Flexbox para posicionar ()
+* Markup HTML mas limpio
+* Mantenimiento y flexibilidad de diseño
 
-### Grid.css
-La funcion primaria del proyecto es entregar ligereza y libertad de diagramacion.
-Estilos para:
-* row
-* column
+Actualmente el proyecto está dividido y enfocado a tres aspectos escenciales, pudiendo funcionar independientemente. Usa solo lo que necesitas. Mantente ligero.
+
+## Tecnologias
+* HTML5
+* CSS+
+* CSS Flexbox
+* CSS Grid
+
+## Setup
+
+Tan simple como poner esta línea antes del < /head>
+
+```
+<link rel="stylesheet" href="css/blob.css">
+```
+## Uso
 
 ### Blob.css
-Estilos para elementos generales como:
+Entrega estructura, una paleta de colores y estilos a elementos generales como:
 * Header
 * Nav
 * Main
@@ -31,27 +44,31 @@ Estilos para elementos generales como:
 
 ### inputs.css 
 Estilos para elementos de formulario como:
-* text y textarea
-* Form y label
-* Botones
+text, textarea, Form, label y Botones
 
-## Tecnologias
-* HTML5
-* CSS+
-* CSS Flexbox
-* CSS Grid
+### Grid.css
+La funcion primaria del proyecto es entregar ligereza y libertad de diagramacion.
+Estilos para: -, - Y - . Se definirá en el desarrollo.
 
-## Setup
 
-Tan simple como poner esta línea antes del </head>
+###Clases .css-grid y .flexbox 
 
+Son los nombres de dos modelos de posicionamiento CSS de lo mas populares (ademas de nativos) y los tenemos presentes. Cada uno otorgará caracteristicas propias a los elementos que contengan. Ampliamente compatibles. Puedes anidar uno dentro de otro sin problemas.
 ```
-<link rel="stylesheet" href="css/grid.css">
+<div class="css-grid">
+<!-- TU CONTENIDO -->
+</div>
 ```
-## Uso
-
 En prepración.
 Aún así hay demos disponibles en formato html. 
 Solo añade un poco de creatividad.
+
+
+## En Inplementación y lo que hacer
+* Progresiva integracion de Sass (Simple)
+* CSS+ (nuevos Selectores utiles)
+* CSS+HTML (Nuevos demos)
+* Mejorar Prácticas
+* ...
 
 

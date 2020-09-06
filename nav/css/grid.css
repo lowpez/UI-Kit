@@ -1,23 +1,25 @@
 @charset "UTF-8";
 /*! Blob.cl v0.1.1 | MIT License | https://github.com/lowpez/UI */
 body{
-  
+  font-family: 'Times New Roman', serif;
 }
-/*IMPLICIT GRID*/
+
 .row:not(.column){
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 0rem;
 }
-.row > *  {
+.row > *[class^='column']  {
     position: relative;
 }
+
 .column {
 
 }
 
 
 header{
+  background: #000;
   grid-area: header;
 }
 nav{
@@ -26,14 +28,14 @@ nav{
 }
 main{
   grid-area: main;
+  background: #FFFFFF;
 }
 aside{
+  background: #FFCC00;
   grid-area: aside;
 }
-section{
-  grid-area: section;
-}
 footer{
+  background: #E6E6E6;
   grid-area: footer;
 }
 

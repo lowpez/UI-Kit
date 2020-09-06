@@ -26,8 +26,9 @@
     .css-grid {
       border: 2.5rem solid #FFCC00;
       grid-template-columns: minmax(320px, 1fr);
-      grid-template-rows: auto !important;
+      grid-template-rows: auto auto  !important;
       grid-template-areas: "main"
+      "footer"
     }
     main, footer{   
       max-width: 45rem;
@@ -39,6 +40,7 @@
     }
     footer{
       grid-area: footer;
+      padding-bottom: 1em;
     }
     p {
       font-size: 1.6rem;
@@ -64,6 +66,17 @@
       padding-left: 1rem;
       padding-bottom: 1.61rem;
     }
+    input[type="text"],
+    input[type="email"],
+    textarea{
+      border: 3px solid #CCC;
+    }
+    input[type="email"]:focus,
+    input[type="text"]:focus,
+    textarea:focus,
+    select:focus {
+      border: 3px solid #000;
+    }
     .column  {
       max-width: 45rem;
       padding: 3rem;
@@ -84,33 +97,18 @@
 <body>
   <div class="css-grid h-100">
     <main class="top center">
-        <h2>A la Matrix</h2>
-        <h1>Registro</h1>
-        <p>Ten siempre presente un texto descriptivo.</p>
+        <h2>A Sumar</h2>
+        <h1>Suscríbase al mejor newsletter</h1>
+        <p>Regístrese para recibir las novedades de Blob.cl y LWP en su email.</p>
         <form action="">
           <label for="email" class="sr-only">Email Address</label>
           <input type="email" placeholder="Email@address.com" aria-label="E-mail" autofocus />
-          <select name="favs">
-            <option value="">Tu favorito</option>
-            <option value="js">Javascript</option>
-            <option value="css">Css</option>
-            <option value="html">HTML5</option>
-          </select>
-
-        <input type="radio" name="chooseone" value="HTML" checked><label for="HTML"> Si</label> 
-        <input type="radio" name="chooseone" value="CSS"><label for="CSS"> No</label><br>
-
-
-          <textarea rows="4" cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
           <input type="button" value="Sign Up"> 
-           
-          <input type="checkbox" id="recordarme" name="recordarme"/> 
-           <span class="disclaimer">Terminos y condiciones</span> 
         </form>
     </main>
+    <footer class="center-v center disclaimer">
+      <em>Nunca compartiremos su dirección de correo electrónico y podra darse de baja en cualquier momento.</em>
+    </footer>
     </div>
-    <script>
-      
-    </script>
     </body>
     </html>

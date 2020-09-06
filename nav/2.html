@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-CL" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blob UI - HTML5 Basico</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,300,500,700,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="2.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <style>
+    .row{
+      grid-template-columns: 1fr 3fr !important;
+      grid-template-rows: auto 1fr auto !important;
+      height: calc(100vh - 0px);
+      grid-template-areas: "header header"
+      "aside main"
+      "footer footer"
+    }
+    @media (max-width: 860px) {
+      .row{
+        grid-template-areas: "header header"
+        "main main"
+        "aside aside"
+        "footer footer"
+      }
+    }
+  </style>
+</head>
+<body>
+
+ 
+  
+<header>
+<div id="logo">OnAirCode</div>
+<input type="checkbox" id="toggle">
+<label for="toggle" class="burger">&#9776;</label>
+
+
+<nav>
+<ul>
+<li><a href='#JavaScript'>JavaScript</a></li>
+<li><a href="#CSS">CSS</a></li>
+<li><a href="#HTML">HTML</a></li>
+<li><a href="#logo">Home</a></li>
+  <ul>
+</nav>
+</header> 
+
+
+
+
+<script type="text/javascript">
+      
+let burger = document.querySelector('.burger');
+let nav = document.querySelector('header');
+
+burger.addEventListener('click', e => {
+  nav.classList.toggle('appear');
+})
+    </script>
+</body>
+</html>

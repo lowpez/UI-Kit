@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es-CL" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blob UI - HTML5 Basico</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,300,500,700,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/blob.css">
+  <style>
+    body{
+      color: black !important;
+    }
+    .css-grid{
+      grid-template-columns: [section] minmax(320px, 1fr) [aside] minmax(3em, auto) [main] minmax(min-content, 1fr);
+      grid-template-rows: auto !important;
+      grid-template-areas: "section aside main"
+    }
+    h1  {
+      font-size: 58px;
+      line-height: 1;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    main, aside, figure{
+      display: grid;
+      justify-items: center;
+    }
+    nav{
+      align-self: flex-start !important;
+      align-content: center !important;
+      text-align: center;
+    }
+    section{
+      color: white;
+      display: grid;
+      background-image: url('https://i.imgur.com/pvVmY5y.jpg');
+      background-size: cover;
+      height: calc(100vh - 0px);
+    }
+    main {
+      /*background: var(--mug-pastel);*/ 
+      justify-items: left !important;
+    }
+    aside{
+      /*background: var(--yellow-pastel);*/
+      line-height: 17px;
+      letter-spacing: 4px;
+      text-align: center;
+      padding-left: 3em; 
+    }
+    figure{
+      /*object-fit: cover;*/
+      /*background: var(--olive-pastel);*/
+      max-width: 330px;
+      grid-area: figure;
+    }
+    figcaption{
+      color:var(--gray-deep);
+    }
+    figure svg{
+      max-width: 250px;
+    }
+    footer{
+      /*background: var(--pink-pastel);*/
+    }
+    @media (max-width: 860px) {
+      aside {
+        writing-mode: horizontal-tb !important;
+        padding: 2em 0 2em 0; 
+      }       
+      .css-grid{
+        grid-template-columns: minmax(320px, 1fr)  ;
+        grid-template-areas: "section"
+        "aside"
+        "main"
+      }
+      section{
+        height: calc(100vh - 0px);
+      }
+    }
+</style>
+</head>
+<body>
+  <div class="css-grid">
+    <section>
+      <nav>Logo / N A V</nav>
+      <footer class="bottom">PIE</footer>
+    </section>
+    <aside class="meta sideways-lr">
+      <strong>Agosto 2020<span class="dash">&ndash;</span>Landscapes</strong>
+    </aside>
+    <main>
+      <figure>
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="40" stroke="#37194E" stroke-width="0" fill="#DEDBBA" />
+        </svg>
+        <figcaption>
+          <h1 class="title">From Moon</h1>
+          <p class="col-text">
+            <strong><em></em></strong> 
+            Ay cuántas veces quise tener cola
+            andando junto a él por las orillas del mar,
+            en la gran soledad: arriba el aire
+            traspasando de pájaros glaciales
+            y mi perro brincando, hirsuto,
+            lleno de voltaje marino en movimiento:
+            frente a frente al Océano y su espuma.
+            alegre, alegre, alegre
+            como los perros saben ser felices.
+          </p>
+          <p class="credit text-center">
+            Credito: Pablo Neruda &dash; <a href="https://fundacionneruda.org/2020/01/perro-ha-muerto-pablo-neruda/" target="_blank">Un Perro</a>
+          </p>
+        </figcaption>
+      </figure>
+    </main>
+  </div>
+    <script type="text/javascript">
+      let mainNav = document.querySelector('.navbar-toggle');
+      let navBarToggle = document.querySelector('header');
+
+      mainNav.addEventListener('click', e => {
+        navBarToggle.classList.toggle('ico-movil');
+      });
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-CL" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blob UI - HTML5 Basico</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,300,500,700,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/blob.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <style>
+    .row{
+      grid-template-columns: 1fr 3fr !important;
+      grid-template-rows: auto 1fr auto !important;
+      height: calc(100vh - 0px);
+      grid-template-areas: "header header"
+      "aside main"
+      "footer footer"
+    }
+    @media (max-width: 860px) {
+      .row{
+        grid-template-areas: "header header"
+        "main main"
+        "aside aside"
+        "footer footer"
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="row">
+  <header>
+   <h1>My_Logo</h1>
+<nav>
+  <label class="burger" for="toggle">&#9776;</label>
+  <input type="checkbox" id="toggle">
+  <ul class="nav">
+    <li>
+      <a href="#" class="nav-links">Home</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">Sobre</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">Contacto</a>
+    </li>
+    <li>
+      <div class="btn">Share Me</div>
+    </li>
+  </ul>
+</nav>
+ 
+  </header>
+  <main>Main</main>
+  <aside>Aside</aside>
+  <footer>
+    <p>Author: Angello López<br>
+      <a href="mailto:">Email@address.cl</a></p>
+  </footer>
+</div>
+
+<script type="text/javascript">
+      
+let burger = document.querySelector('.burger');
+let nav = document.querySelector('nav');
+
+burger.addEventListener('click', e => {
+  nav.classList.toggle('appear');
+})
+    </script>
+</body>
+</html>

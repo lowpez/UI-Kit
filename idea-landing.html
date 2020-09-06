@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es-CL" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blob UI - Landing A</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Inter:400,300,500,600,700,800,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/blob.css">
+  <link rel="stylesheet" href="css/inputs.css">
+  <style>
+    body{
+      background: var(--yellow-pale);
+      font-family: var(--inter);
+      color: var(--black-lite);
+      font-weight: 500;
+    }
+    html{
+      font-size: 62.5%;
+    }
+    nav, footer{
+      padding: 0 2rem 0 2rem;
+    }
+    nav{
+      background: transparent;
+      line-height:auto !important;
+      grid-area: nav;
+    }
+    nav ul li a{
+      letter-spacing: -0.05rem;
+      font-size: 1em;
+      color: var(--black-lite);
+    }
+    nav ul li a:hover{
+      color: var(--black-lite);
+    }
+    nav ul li a:after {
+      background: black;
+    }
+    nav li:last-child { 
+      border-bottom: none; 
+    }
+    main{
+      padding:0 0 2em 2em !important;
+      background: #FBE100;
+      grid-area: main;
+    }
+    .navbar-toggle{
+      color:var(--black-lite) !important;
+    }
+    h1, h2, h3{
+      font-family: var(--inter);
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    h1{
+      font-size: 4.5rem !important;
+      color: black !important;
+ 
+    }
+    h3{
+      text-transform: none !important;
+      font-weight: 500 !important;
+      letter-spacing: 1px;
+    }
+    .css-grid{
+      display: grid;
+      grid-template-columns: 3fr 1fr !important;
+      grid-template-rows: auto auto auto !important;
+      height: calc(100vh - 0rem);
+      /*padding: 0 2rem 0 2rem;*/
+      grid-template-areas: "main nav"
+      "main aside"
+      "main aside"
+    }
+
+    .llogo{
+      font-size: 1.5rem;
+      letter-spacing: 1rem;
+      font-weight: 300;
+    }
+
+    main, aside{
+      display: flex;
+    }
+    header{
+      justify-content: center;
+      align-self: center;  
+      align-items:flex-center;
+    }
+    main{
+      background: url('https://i.imgur.com/qkLRgm9.jpg') center;
+      background-size: cover;
+    }
+    .logo{
+      color: black;
+
+    }
+    aside{
+      padding: 0;
+      flex-flow: column; 
+      align-items: stretch;
+      grid-area: aside;
+    }
+    .custom-form{
+      background: white;
+    }
+    .col{
+      flex: auto;
+      padding: 4rem ; 
+      grid-area: col;
+    }
+    .col > div{ 
+      padding: 0em; 
+    }
+    aside p{
+      /*align-self: flex-end;
+      width: 280px;
+      padding-left:2rem;*/
+    }
+    section{
+      background: #FFF;
+      color: black;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 4rem;
+      /*padding: 0 2rem 0 2rem; */
+    }
+    input[type="button"]:not(.btn) {
+      text-transform: capitalize !important;
+      font-weight: 400 !important;
+      font-size: 1.5rem !important;
+      letter-spacing: auto !important;
+    }
+    .btn{
+      text-transform: uppercase !important;
+      background: var(--purple-deep) !important;
+      border: 0px solid var(--purple-deep) !important;
+      border-radius:  0px !important;
+      padding: 3rem !important;
+      color: #FFF !important;
+      font-size: 1.8rem !important;
+      font-weight: 700 !important;
+      width: auto !important;
+      letter-spacing: 0px !important;
+    }
+    .btn:hover{
+      background: /*transparent*/var(--yellow-pale) !important;
+      color:black !important;
+    }
+    @media (max-width: 1024px) {
+      h1, aside p{
+        align-self: center;
+      }
+      nav ul li{
+        border-bottom:2px solid #000 !important;
+      }
+      main{ 
+        height: calc(100vh - 0rem);
+      }
+      aside {
+        padding-top: 0;
+      }
+      aside p{
+
+      }
+      .css-grid{
+        padding: 0 0rem 0 0rem;
+        grid-template-areas: "nav nav"
+        "main main"
+        "aside aside"
+        "aside aside"
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="css-grid h-100">
+    <main>
+      <div class="logo">Tu Marca</div>
+      <header>
+        <h1>Billy Blob</h1>
+        <h3>Comienza tu gira y conquista los corazones</h3><br />
+        <input class="btn" type="button" value="Ser Famoso"> 
+      </header>
+    </main>
+    <input type="checkbox" id="toggle">
+      <nav>
+        <!--<a class="logo" href="#">Logo</a>-->
+        <label class="navbar-toggle" for="toggle">&#9776;</label>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav> 
+    <aside>
+      <div class="col">
+        <h2>Featured</h2>
+        <p>Billy Blob has had 33 Top 40 hits and 23 Grammy nominations since signing his first solo recording contract in 1972. In 1990, he was presented with a Grammy Legend Award.<p>
+        </div>
+
+
+        <div class="col custom-form">
+          <h2>Suscribete</h2>
+          <p>Recibe todas las novedades de Blob.cl y LWP en tu e-mail.</p>
+          <form action="">
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" placeholder="Email@address.com" aria-label="E-mail" autofocus />
+            <input type="button" value="Sign Up"> 
+          </form>
+        </div>
+      </aside>
+    <!--<footer>
+      <p><span class="u-rotate-180"> &copy;</span>Blob.cl</p>
+    </footer> -->
+  </div>
+    <script type="text/javascript">
+      let mainNav = document.querySelector('.navbar-toggle');
+      let navBarToggle = document.querySelector('nav');
+
+      mainNav.addEventListener('click', e => {
+        navBarToggle.classList.toggle('ico-movil');
+      });
+    </script>
+  </body>
+  </html>

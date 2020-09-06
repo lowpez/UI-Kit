@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-CL" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blob UI - HTML5 Basico</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,300,500,700,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <style>
+    .row{
+      grid-template-columns: 1fr 3fr !important;
+      grid-template-rows: auto 1fr auto !important;
+      height: calc(100vh - 0px);
+      grid-template-areas: "header header"
+      "aside main"
+      "footer footer"
+    }
+    @media (max-width: 860px) {
+      .row{
+        grid-template-areas: "header header"
+        "main main"
+        "aside aside"
+        "footer footer"
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <input type="checkbox" id="toggle">
+<nav>
+  <a class="logo" href="#">Logo</a>
+  <label class="navbar-toggle" for="toggle">&#9776;</label>
+  <ul>
+    <li><a href="#">Sobre <small>Conoce un poco mas</small></a></li>
+    <li><a href="#">Servicios <small>Conoce nuestros Servicios</small></a></li>
+    <li><a href="#">Portfolio <small>Conoce un poco mas</small></a></li>
+    <li><a href="#">Contacto <small>Conoce un poco mas</small></a></li>
+  </ul>
+</nav>
+</header>
+<!-- Este ejemplo Usa Blob UI
+https://github.com/lowpez/UI -->
+<script type="text/javascript">
+      
+let mainNav = document.querySelector('.navbar-toggle');
+let navBarToggle = document.querySelector('header');
+
+mainNav.addEventListener('click', e => {
+  navBarToggle.classList.toggle('appear');
+});
+    </script>
+</body>
+</html>

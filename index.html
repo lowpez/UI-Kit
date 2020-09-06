@@ -3,46 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blob UI - Html5 Basico</title>
+  <title>Blob UI - HTML5 Basico</title>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,300,500,700,900" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/blob.css">
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/demo.css">
+  <style>
+    body{
+      color: black !important;
+    }
+    .row{
+      grid-template-columns: [header] 1fr [content] 3fr !important;
+      grid-template-rows: auto 1fr auto !important;
+      height: calc(100vh - 0px);
+      grid-template-areas: 
+      "header header"
+      "aside main"
+      "footer footer"
+    }
+    nav{
+      /*background: #2D2926;*/
+      grid-area: nav;
+    }
+    main{
+      grid-area: main;
+    }
+    section{
+      grid-area: section;
+    }
+    header{
+      background: var(--black-lite);
+      grid-area: header;
+    }
+    aside{
+      background: var(--yellow-lite);
+      grid-area: aside;
+    }
+    footer{
+      background: var(--gray-lite);
+      grid-area: footer;
+    }
+    @media (max-width: 860px) {
+      .row{
+        grid-template-areas: "header header"
+        "main main"
+        "aside aside"
+        "footer footer"
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="css-grid row">
+    <header>
+      <input type="checkbox" id="toggle">
+      <nav>
+        <a class="logo" href="#">Logo</a>
+        <label class="navbar-toggle" for="toggle">&#9776;</label>
+        <ul>
+          <li><a href="#">item 1</a></li>
+          <li><a href="#">item 2</a></li>
+          <li><a href="#">item 3</a></li>
+          <li><a href="#">item 4</a></li>
+        </ul>
+        <!--<a class="btn">Share Me</a>-->
+      </nav> 
+    </header>
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>
+      <p><span class="u-rotate-180"> &copy;</span>Blob.cl</p>
+    </footer>
+  </div>
+    <script type="text/javascript">
+      let mainNav = document.querySelector('.navbar-toggle');
+      let navBarToggle = document.querySelector('header');
 
-<div class="wrapper"><!-- CONTENEDOR -->
-  <div class="row"><!-- FILA -->
-    
-    <div class="column cool h-100"><!-- COL 1 -->
-      <div class="top-left">Texto--</div>
-      <div class="bottom-right">Texto--</div>
-    </div><!-- / COL 1 -->
-
-    <div class="column"><!-- COL 2 -->
-      <aside class="meta u-rotate-90">
-        <strong>Agosto 2020<span class="u-ml-lv3 u-mr-lv3">&ndash;</span>Landscapes</strong>
-      </aside>
-      <div class="col-center col-fixed u-text-center">
-        <img src="https://i.imgur.com/w5owydU.png" class="logo">
-        <h1 class="title">From Moon</h1>
-          <p class="col-text">
-            <strong><em>Pablo Neruda ::</em></strong> 
-            Ay cuántas veces quise tener cola
-            andando junto a él por las orillas del mar,
-            en la gran soledad: arriba el aire
-            traspasando de pájaros glaciales
-            y mi perro brincando, hirsuto,
-            lleno de voltaje marino en movimiento:
-            frente a frente al Océano y su espuma.
-            alegre, alegre, alegre
-            como los perros saben ser felices.
-          </p>
-      </div>
-    </div><!-- / COL 2 -->
-
-  </div><!-- / FILA -->
-</div><!-- / CONTENEDOR -->
-
-</body>
-</html>
+      mainNav.addEventListener('click', e => {
+        navBarToggle.classList.toggle('ico-movil');
+      });
+    </script>
+  </body>
+  </html>
