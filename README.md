@@ -62,17 +62,21 @@ Son los nombres de dos modelos de posicionamiento CSS de lo mas populares (adema
 ### Paleta y colores seleccionados
 Siempre es mas facil recordar colores con palabras que con numeros.
 
-#### Formatos de Uso : --[color]-[brillo]-[sufijo]
-Ejemplo: green-lite-pop 
+### Formatos de Uso : --[color]-[brillo]-[sufijo]
 
+```
 --[color]
+--[color]-[brillo]
 --[color]-[sufijo]
 --[color]-[brillo]-[sufijo]
+```
+Ejemplo: green-lite-pop 
 
+```
 --[color]: blue, red, white etc
 -[brillo]: lite, pale, deep o dark.
 -[sufijo]: Cualquiera.
-
+```
 ```
 <!-- TU CLASE -->
 .my-class{
