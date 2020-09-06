@@ -29,9 +29,9 @@ Tan simple como poner esta línea antes del < /head>
 ```
 <link rel="stylesheet" href="css/blob.css">
 ```
-## Resumen de Uso
+# Resumen de Uso
 
-### Blob.css
+## Blob.css
 Entrega estructura, una paleta de colores y estilos a elementos generales como:
 **Header, Nav, Main, Section, Footer, Body, p, a y clases utiles** (rotación de textos y otras)
 
