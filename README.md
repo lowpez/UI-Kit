@@ -51,7 +51,7 @@ La funcion primaria del proyecto es entregar ligereza y libertad de diagramacion
 Estilos para: -, - Y - . Se definirá en el desarrollo.
 
 
-###Clases .css-grid y .flexbox 
+### Clases .css-grid y .css-flexbox 
 
 Son los nombres de dos modelos de posicionamiento CSS de lo mas populares (ademas de nativos) y los tenemos presentes. Cada uno otorgará caracteristicas propias a los elementos que contengan. Ampliamente compatibles. Puedes anidar uno dentro de otro sin problemas.
 ```
@@ -59,6 +59,33 @@ Son los nombres de dos modelos de posicionamiento CSS de lo mas populares (adema
 <!-- TU CONTENIDO -->
 </div>
 ```
+### Paleta y colores seleccionados
+Siempre es mas facil recordar colores con palabras que con numeros.
+
+#### Formatos de Uso : --[color]-[brillo]-[sufijo]
+Ejemplo: green-lite-pop 
+
+--[color]
+--[color]-[sufijo]
+--[color]-[brillo]-[sufijo]
+
+--[color]: blue, red, white etc
+-[brillo]: lite, pale, deep o dark.
+-[sufijo]: Cualquiera.
+
+```
+<!-- TU CLASE -->
+.my-class{
+	background: var(--yellow-pastel);
+	color: var(--black-lite);
+}
+```
+```
+<div class="my-class">
+<!-- TU CONTENIDO -->
+</div>
+```
+
 En prepración.
 Aún así hay demos disponibles en formato html. 
 Solo añade un poco de creatividad.
