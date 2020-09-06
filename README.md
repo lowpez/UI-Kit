@@ -82,6 +82,41 @@ Ejemplo: green-lite-pop
 </div>
 ```
 
+## Posicionando
+Solo unas clases preparadas.
+
+### Vertical
+
+![alt text](url-image.jpg?raw=true)
+```
+.top{
+  align-self: start;
+}
+.bottom{
+  align-self: end;
+}
+.center-v{
+  align-self: center;
+}
+.stretch{
+  align-self: stretch;
+  justify-self: stretch;
+}
+```
+### Horizontal 
+
+![alt text](url-image.jpg?raw=true)
+```
+.left{
+  justify-self: start;
+}
+.center{
+  justify-self: center;
+}
+.right{
+  justify-self: end;
+}
+```
 En prepración.
 Aún así hay demos disponibles en formato html. 
 Solo añade un poco de creatividad.
