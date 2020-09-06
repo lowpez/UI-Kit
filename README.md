@@ -88,7 +88,7 @@ Si eres nuevo seguro te ayudaran a entender su uso.
 
 ### Vertical
 
-![alt text](url-image.jpg?raw=true)
+![alt text](https://github.com/lowpez/UI/blob/master/graficos/pos-vertical.jpg?raw=true)
 ```
 .top{
   align-self: start;
@@ -106,7 +106,7 @@ Si eres nuevo seguro te ayudaran a entender su uso.
 ```
 ### Horizontal 
 
-![alt text](url-image.jpg?raw=true)
+![alt text](https://github.com/lowpez/UI/blob/master/graficos/pos-horizontal.jpg)
 ```
 .left{
   justify-self: start;
