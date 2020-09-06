@@ -18,6 +18,8 @@ Actualmente el proyecto está dividido y enfocado a tres aspectos escenciales, p
 
 ![alt text](https://raw.githubusercontent.com/lowpez/UI/master/graficos/inputs.png?raw=true)
 
+![alt text](https://raw.githubusercontent.com/lowpez/UI/master/graficos/idea%20-%20Landing%20A.png?raw=true)
+
 ![alt text](https://github.com/lowpez/UI/blob/master/graficos/w-2-cols-6.png?raw=true)
 
 # Tecnologias
