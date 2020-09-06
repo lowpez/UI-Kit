@@ -16,6 +16,10 @@ Seguro ya hay muchos por ahí, pero este es mi favorito.
 
 Actualmente el proyecto está dividido y enfocado a tres aspectos escenciales, pudiendo funcionar independientemente. Usa solo lo que necesitas. Mantente ligero.
 
+![alt text](https://raw.githubusercontent.com/lowpez/UI/master/graficos/inputs.png?raw=true)
+
+![alt text](https://github.com/lowpez/UI/blob/master/graficos/w-2-cols-6.png?raw=true)
+
 # Tecnologias
 * HTML5
 * CSS+
