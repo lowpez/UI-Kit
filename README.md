@@ -33,11 +33,10 @@ Tan simple como poner esta línea antes del < /head>
 
 ### Blob.css
 Entrega estructura, una paleta de colores y estilos a elementos generales como:
-Header, Nav, Main, Section, Footer, Body, p, a y clases utiles (rotación de textos y otras)
+**Header, Nav, Main, Section, Footer, Body, p, a y clases utiles** (rotación de textos y otras)
 
 ### inputs.css 
-Estilos para elementos de formulario como:
-text, textarea, Form, label y Botones
+Estilos para elementos de formulario como: **text, textarea, Form, label y Botones**
 
 ### Grid.css
 La funcion primaria del proyecto es entregar ligereza y libertad de diagramacion.
