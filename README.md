@@ -84,6 +84,7 @@ Ejemplo: green-lite-pop
 
 ## Posicionando
 Solo unas clases preparadas.
+Si eres nuevo seguro te ayudaran a entender su uso.
 
 ### Vertical
 
