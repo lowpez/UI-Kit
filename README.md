@@ -59,7 +59,7 @@ Son los nombres de dos modelos de posicionamiento CSS de lo mas populares (adema
 <!-- TU CONTENIDO -->
 </div>
 ```
-### Paleta y colores seleccionados
+## Paleta y colores seleccionados
 Siempre es mas facil recordar colores con palabras que con numeros.
 
 ### Formatos de Uso : --[color]-[brillo]-[sufijo]
