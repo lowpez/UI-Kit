@@ -7,6 +7,8 @@
 Mi Front-end elemental para embellecer el CSS de tus proyectos fácilmente con un estilo minimalista.
 Prototipos mas rápidos desatando el poder nativo de HTML y CSS Grid/Flexbox sin librerias externas.
 
+Seguro ya hay muchos por ahí, pero este es mi favorito.
+
 ### Objetivo del proyecto = Porque Usar.
 * Filosofía CSS Grid para estructurar y Flexbox para posicionar ()
 * Markup HTML mas limpio
