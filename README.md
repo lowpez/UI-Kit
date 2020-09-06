@@ -29,7 +29,7 @@ Tan simple como poner esta línea antes del < /head>
 ```
 <link rel="stylesheet" href="css/blob.css">
 ```
-## Uso
+## Resumen de Uso
 
 ### Blob.css
 Entrega estructura, una paleta de colores y estilos a elementos generales como:
