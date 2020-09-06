@@ -16,13 +16,13 @@ Seguro ya hay muchos por ahí, pero este es mi favorito.
 
 Actualmente el proyecto está dividido y enfocado a tres aspectos escenciales, pudiendo funcionar independientemente. Usa solo lo que necesitas. Mantente ligero.
 
-## Tecnologias
+# Tecnologias
 * HTML5
 * CSS+
 * CSS Flexbox
 * CSS Grid
 
-## Setup
+# Setup
 
 Tan simple como poner esta línea antes del < /head>
 
@@ -43,7 +43,7 @@ La funcion primaria del proyecto es entregar ligereza y libertad de diagramacion
 Estilos para: -, - Y - . Se definirá en el desarrollo.
 
 # Blob.css
-### Clases .css-grid y .css-flexbox 
+## Clases .css-grid y .css-flexbox 
 
 Son los nombres de dos modelos de posicionamiento CSS de lo mas populares (ademas de nativos) y los tenemos presentes. Cada uno otorgará caracteristicas propias a los elementos que contengan. Ampliamente compatibles. Puedes anidar uno dentro de otro sin problemas.
 ```
