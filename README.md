@@ -16,6 +16,12 @@ Seguro ya hay muchos por ahí, pero este es mi favorito.
 
 Actualmente el proyecto está dividido y enfocado a tres aspectos escenciales, pudiendo funcionar independientemente. Usa solo lo que necesitas. Mantente ligero.
 
+Algunos ejemplos:
+
+[Base](https://lowpez.github.io/UI/base.html)
+[Formulario](https://lowpez.github.io/UI/inputs.html)
+[Landing A](https://lowpez.github.io/UI/idea-landing.html)
+
 ![alt text](https://raw.githubusercontent.com/lowpez/UI/master/graficos/inputs.png?raw=true)
 
 ![alt text](https://raw.githubusercontent.com/lowpez/UI/master/graficos/idea%20-%20Landing%20A.png?raw=true)
