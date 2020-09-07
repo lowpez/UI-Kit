@@ -18,9 +18,7 @@ Actualmente el proyecto está dividido y enfocado a tres aspectos escenciales, p
 
 Algunos ejemplos:
 
-[Base](https://lowpez.github.io/UI/base.html)
-[Formulario](https://lowpez.github.io/UI/inputs.html)
-[Landing A](https://lowpez.github.io/UI/idea-landing.html)
+[Base](https://lowpez.github.io/UI/base.html) / [Formulario](https://lowpez.github.io/UI/inputs.html) / [Landing A](https://lowpez.github.io/UI/idea-landing.html)
 
 ![alt text](https://raw.githubusercontent.com/lowpez/UI/master/graficos/inputs.png?raw=true)
 
