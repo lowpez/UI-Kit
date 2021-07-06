@@ -32,7 +32,9 @@ input[type="search"] {
 input[type="search"]:focus {
 width: 100%;
 }
-input[type="button"] {
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   font-family:'Helvetica', sans-serif;
   border: none;
   background: #000;
@@ -44,7 +46,10 @@ input[type="button"] {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
+  margin-bottom: 0.3em;
 }
+input[type="submit"]:hover,
+input[type="submit"]:focus,
 input[type="button"]:hover,
 input[type="button"]:focus {
   outline: 0;
@@ -54,7 +59,17 @@ input[type="button"]:focus {
   transition:background .4s ease;
   /*animation: colorchange 0.9s 1;*/
 }
-
+input[type="reset"] {
+  background: #ffcc00;
+  color: #000;
+}
+input[type="reset"]:hover {
+  background: #e76f51;
+  color: #fff;
+}
+.rounded{
+  border-radius: 25px;
+}
 select  {
   font-size: 1.5rem;
   padding: 1.3rem;
